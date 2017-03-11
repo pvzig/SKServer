@@ -16,6 +16,6 @@ let package = Package(
 )
 
 #if os(macOS) || os(iOS) || os(tvOS)
-let dependency = Package.Dependency(url: "https://github.com/pvzig/swifter.git", majorVersion: 3)
+let dependency: Package.Dependency = .Package(url: "https://github.com/pvzig/swifter.git", majorVersion: 3)
 package.dependencies.append(dependency)
 #endif

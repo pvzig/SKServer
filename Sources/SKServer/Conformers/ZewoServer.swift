@@ -1,5 +1,5 @@
 //
-// SKServer.swift
+//  ZewoServer.swift
 //
 // Copyright © 2017 Peter Zignego. All rights reserved.
 //
@@ -22,39 +22,29 @@
 // THE SOFTWARE.
 
 import Foundation
-import SKCore
+import HTTPServer
 
-public protocol SlackKitServer {
-    func start()
-    func stop()
-}
+class ZewoServer: SlackKitServer {
 
-public final class SKServer {
+    let server: Server
     
-    internal let server: SlackKitServer
-
-    public init?(server: SlackKitServer? = nil, responder: SlackKitResponder) {
-        if let server = server {
-            self.server = server
-        } else {
-            #if os(Linux)
-                do {
-                    self.server = try ZewoServer(responder: responder)
-                } catch let error {
-                    print(error)
-                    return nil
-                }
-            #else
-                self.server = SwifterServer(responder: responder)
-            #endif
+    init(host: String = "0.0.0.0", port: Int = 8080, responder: Responder) throws {
+        do {
+            server = try Server(host: host, port: port, responder: responder)
+        } catch let error {
+            throw error
         }
     }
     
     public func start() {
-        server.start()
+        do {
+            try server.start()
+        } catch let error {
+            print("Server failed to start with error: \(error)")
+        }
     }
-
+    
     public func stop() {
-        server.stop()
+
     }
 }

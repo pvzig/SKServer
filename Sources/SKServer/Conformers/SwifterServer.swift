@@ -21,90 +21,54 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#if os(macOS) || os(iOS) || os(tvOS)
 import Foundation
 import HTTP
 import Swifter
 
 class SwifterServer: SlackKitServer {
     
-    let server = HttpServer()
-    let port: in_port_t
-    let forceIPV4: Bool
+    let server: Swifter
     
-    init(port: in_port_t = 8080, forceIPV4: Bool = false, responder: SlackKitResponder) {
-        self.port = port
-        self.forceIPV4 = forceIPV4
-        
-        for route in responder.routes {
-            server[route.path] = { request in
-                do {
-                    return try route.middleware.respond(to: request.request, chainingTo: responder).httpResponse
-                } catch let error {
-                    print(error)
-                    return .badRequest(.text(error.localizedDescription))
+    init?(port: in_port_t = 8080, responder: SlackKitResponder) {
+        do {
+            server = try Swifter(port)
+            for route in responder.routes {
+                server[route.path] = { _, request, response in
+                    do {
+                        response(try route.middleware.respond(to: request.request, chainingTo: responder).response)
+                    } catch let error {
+                        response(TextResponse(400, error.localizedDescription))
+                    }
                 }
             }
+        } catch let error {
+            print("Server failed to initalize with error: \(error)")
+            return nil
         }
     }
     
     public func start() {
         do {
-            try server.start(port, forceIPv4: forceIPV4)
-        } catch let error as NSError {
+            try server.loop()
+        } catch let error {
             print("Server failed to start with error: \(error)")
-        }
-    }
-    
-    public func stop() {
-        server.stop()
-    }
-}
-
-extension Response {
-
-    public var httpResponse: HttpResponse {
-        switch self.status {
-        case .ok where contentType == nil:
-            do {
-                var req = self
-                let text = try String(buffer: try req.body.becomeBuffer(deadline: 3.seconds))
-                return .ok(.text(text))
-            } catch let error {
-                print(error)
-                return .badRequest(.text(error.localizedDescription))
-            }
-        case .ok where contentType == MediaType(type: "application", subtype: "json"):
-            do {
-                var req = self
-                let data = Data(try req.body.becomeBuffer(deadline: 3.seconds).bytes)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                return .ok(.json(json as AnyObject))
-            } catch let error {
-                print(error)
-                return .badRequest(.text(error.localizedDescription))
-            }
-        case .badRequest:
-            return .badRequest(.text("Bad request."))
-        default:
-            return .ok(.text("ok"))
         }
     }
 }
 
 extension HttpRequest: RequestRepresentable {
-
-    public var request: Request {
-        let method = Request.Method(self.method)
+    
+    public var request: HTTP.Request {
+        let method = HTTP.Request.Method(self.method)
         let url = URL(string:self.path)
         var headers = [CaseInsensitiveString: String]()
-        _ = self.headers.map{headers[CaseInsensitiveString($0.key)] = $0.value}
+        _ = self.headers.map{headers[CaseInsensitiveString($0.0)] = $0.1}
         let body = Body.buffer(Buffer(self.body))
         return Request(method: method, url: url!, headers: Headers(headers), body: body)
     }
 }
 
-extension Request.Method {
+extension HTTP.Request.Method {
     init(_ rawValue: String) {
         let method = rawValue.uppercased()
         switch method {
@@ -121,4 +85,30 @@ extension Request.Method {
         }
     }
 }
-#endif
+
+extension HTTP.Response {
+
+    public var response: HttpResponse {
+        switch self.status {
+        case .ok where contentType == nil:
+            do {
+                var req = self
+                let text = try String(buffer: try req.body.becomeBuffer(deadline: 3.seconds))
+                return TextResponse(stringLiteral: text)
+            } catch let error {
+                return TextResponse(400, error.localizedDescription)
+            }
+        case .ok where contentType == MediaType(type: "application", subtype: "json"):
+            do {
+                var req = self
+                return HttpResponse(try req.body.becomeBuffer(deadline: 3.seconds).bytes)
+            } catch let error {
+                return TextResponse(400, error.localizedDescription)
+            }
+        case .badRequest:
+            return TextResponse(400, "Bad Request")
+        default:
+            return Response(200)
+        }
+    }
+}

@@ -26,7 +26,6 @@ import SKCore
 
 public protocol SlackKitServer {
     func start()
-    func stop()
 }
 
 public final class SKServer {
@@ -37,24 +36,14 @@ public final class SKServer {
         if let server = server {
             self.server = server
         } else {
-            #if os(Linux)
-                do {
-                    self.server = try ZewoServer(responder: responder)
-                } catch let error {
-                    print(error)
-                    return nil
-                }
-            #else
-                self.server = SwifterServer(responder: responder)
-            #endif
+            guard let server = SwifterServer(responder: responder) else {
+                return nil
+            }
+            self.server = server
         }
     }
     
     public func start() {
         server.start()
-    }
-
-    public func stop() {
-        server.stop()
     }
 }

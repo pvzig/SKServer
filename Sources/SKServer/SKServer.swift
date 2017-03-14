@@ -21,12 +21,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
-import SKCore
+@_exported import SKCore
+@_exported import Titan
 
 public protocol SlackKitServer {
     func start()
-    func stop()
+}
+
+public protocol Middleware {
+    func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType)
 }
 
 public final class SKServer {
@@ -38,23 +41,27 @@ public final class SKServer {
             self.server = server
         } else {
             #if os(Linux)
-                do {
-                    self.server = try ZewoServer(responder: responder)
-                } catch let error {
-                    print(error)
-                    return nil
-                }
+                self.server = KituraServer(responder: responder)
             #else
                 self.server = SwifterServer(responder: responder)
             #endif
         }
     }
     
+    public convenience init?(server: SlackKitServer? = nil, responder: SlackKitResponder, oauth: OAuthConfig) {
+        var res = responder
+        res.routes.append(SKServer.oauthRequestRoute(config: oauth))
+        self.init(server: server, responder: res)
+    }
+    
+    private static func oauthRequestRoute(config: OAuthConfig) -> RequestRoute {
+        let oauth = OAuthMiddleware(config: config) { (response) in
+            print(response)
+        }
+        return RequestRoute(path: "/oauth", middleware: oauth)
+    }
+    
     public func start() {
         server.start()
-    }
-
-    public func stop() {
-        server.stop()
     }
 }

@@ -27,10 +27,10 @@ import SKCore
 public struct SKResponse {
     
     let text: String
-    let responseType: ResponseType?
+    let responseType: MessageResponseType
     let attachments: [Attachment]?
     
-    public init(text: String, responseType: ResponseType? = nil, attachments: [Attachment]? = nil) {
+    public init(text: String, responseType: MessageResponseType = .inChannel, attachments: [Attachment]? = nil) {
         self.responseType = responseType
         self.text = text
         self.attachments = attachments
@@ -39,7 +39,7 @@ public struct SKResponse {
     internal var json: [String: Any] {
         var json = [String : Any]()
         json["text"] = text
-        json["response_type"] = responseType?.rawValue
+        json["response_type"] = responseType.rawValue
         json["attachments"] = attachments?.map({$0.dictionary})
         return json
     }

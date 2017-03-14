@@ -1,5 +1,5 @@
 //
-//  ZewoServer.swift
+// KituraServer.swift
 //
 // Copyright © 2017 Peter Zignego. All rights reserved.
 //
@@ -22,31 +22,23 @@
 // THE SOFTWARE.
 
 #if os(Linux)
-import Foundation
-import HTTPServer
+import Titan
+import TitanKituraAdapter
 
-class ZewoServer: SlackKitServer {
+class KituraServer: SlackKitServer {
 
-    let server: Server
+    let server = Titan()
+    let port: Int
     
-    init(host: String = "0.0.0.0", port: Int = 8080, responder: Responder) throws {
-        do {
-            server = try Server(host: host, port: port, responder: responder)
-        } catch let error {
-            throw error
+    init(port: Int = 8080, responder: SlackKitResponder) {
+        self.port = port
+        for route in responder.routes {
+            server.addFunction(path: route.path, handler: route.middleware.respond)
         }
     }
     
     public func start() {
-        do {
-            try server.start()
-        } catch let error {
-            print("Server failed to start with error: \(error)")
-        }
-    }
-    
-    public func stop() {
-
+        TitanKituraAdapter.serve(server.app, on: port)
     }
 }
 #endif

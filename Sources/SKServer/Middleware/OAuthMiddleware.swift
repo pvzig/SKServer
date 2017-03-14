@@ -21,10 +21,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
-import HTTP
 import SKCore
 import SKWebAPI
+import Titan
 
 public struct OAuthMiddleware: Middleware {
 
@@ -36,15 +35,15 @@ public struct OAuthMiddleware: Middleware {
         self.authed = authed
     }
     
-    public func respond(to request: Request, chainingTo next: Responder) throws -> Response {
-        guard let response = AuthorizeResponse(queryItems: request.url.queryItems), let code = response.code, response.state == config.state else {
-            return Response(status: .badRequest)
+    public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
+        guard let response = AuthorizeResponse(queryItems: request.0.query), let code = response.code, response.state == config.state else {
+            return (request.0, Response(400))
         }
         let authResponse = WebAPI.oauthAccess(clientID: config.clientID, clientSecret: config.clientSecret, code: code, redirectURI: config.redirectURI)
         self.authed?(OAuthResponse(response: authResponse))
         guard let redirect = config.redirectURI else {
-            return Response(status: .ok)
+            return (request.0, Response(200))
         }
-        return Response(redirectTo: redirect)
+        return (request.0, Response(code: 302, body: "", headers: [("location", redirect)]))
     }
 }

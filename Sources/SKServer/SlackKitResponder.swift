@@ -24,10 +24,9 @@
 #if os(Linux)
 import Dispatch
 #endif
-import Foundation
-import HTTP
+import Titan
 
-public struct SlackKitResponder: Responder {
+public struct SlackKitResponder: Middleware {
     
     public var routes: [RequestRoute]
     
@@ -35,23 +34,10 @@ public struct SlackKitResponder: Responder {
         self.routes = routes
     }
     
-    public func respond(to request: Request) throws -> Response {
-        guard sslCheck(request: request) == false else {
-            return Response(status: .ok)
+    public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
+        if let form = request.0.formURLEncodedBody.first(where: {$0.name == "ssl_check"}), form.value == "1" {
+            return (request.0, Response(200))
         }
-        // Timeout
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 3 * UInt64.nanosecondsPerSecond), execute: {
-            return Response(status:.ok)
-        })
-        return try self.routes.filter{$0.path == request.path}.first?.middleware.respond(to: request, chainingTo: self) ?? Response(status: .badRequest)
-    }
-    
-    private func sslCheck(request: Request) -> Bool {
-        var req = request
-        let encoded = try? URLEncodedFormMapParser.parse(try req.body.becomeBuffer(deadline: 3.seconds))
-        if encoded?.dictionary?["ssl_check"]?.string == "1" {
-            return true
-        }
-        return false
+        return routes.filter{$0.path == request.0.path}.first?.middleware.respond(to: (request.0, request.1)) ?? (request.0, Response(404))
     }
 }

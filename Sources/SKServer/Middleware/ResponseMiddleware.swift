@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 
 import Foundation
-import HTTP
+import Titan
 
 public struct ResponseMiddleware: Middleware {
     
@@ -34,18 +34,18 @@ public struct ResponseMiddleware: Middleware {
         self.response = response
     }
     
-    public func respond(to request: Request, chainingTo next: Responder) throws -> Response {
-        if let respondable = Respondable(request: request), respondable.token == token {
-            return Response(response: response)
+    public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
+        if let respondable = Respondable(request: request.0), respondable.token == token {
+            return (request.0, Response(response: response))
         }
-        return Response(status: .badRequest)
+        return (request.0, Response(400))
     }
     
     private struct Respondable {
         
         let token: String
         
-        init?(request: Request) {
+        init?(request: RequestType) {
             if let webhook = WebhookRequest(request: request), let token = webhook.token {
                 self.token = token
             } else if let action = MessageActionRequest(request: request), let token = action.token {
@@ -58,37 +58,42 @@ public struct ResponseMiddleware: Middleware {
 }
 
 extension WebhookRequest {
-    public init?(request: Request) {
-        do {
-            var req = request
-            let body = try req.body.becomeBuffer(deadline: 3.seconds).bytes
-            guard
-                let queryString = String(data: Data(body), encoding: .utf8),
-                let proto = req.headers["X-Forwarded-Proto"],
-                let host = req.headers["Host"]
-            else {
-                return nil
-            }
-            let requestString = proto + host + req.url.relativeString + "?" + queryString
-            let components = URLComponents(string: requestString)
-            var dict = [String: Any]()
-            _ = components?.queryItems.flatMap {$0.map({dict[$0.name]=$0.value})}
-            self.init(request: dict)
-        } catch let error {
-            print(error)
+    public init?(request: RequestType) {
+        guard
+            let proto = request.headers.first(where: {$0.name.lowercased() == "x-forwarded-proto"})?.value,
+            let host = request.headers.first(where: {$0.name.lowercased() == "host"})?.value
+        else {
             return nil
         }
+        let requestString = proto + host + request.path + "?" + request.body
+        let components = URLComponents(string: requestString)
+        var dict = [String: Any]()
+        _ = components?.queryItems.flatMap {$0.map({dict[$0.name]=$0.value})}
+        self.init(request: dict)
+    }
+}
+
+extension MessageActionRequest {
+    public init?(request: RequestType) {
+        guard
+            let response = request.formURLEncodedBody.first(where: {$0.name.lowercased() == "payload" })?.value,
+            let data = response.data(using: .utf8),
+            let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
+            else {
+                return nil
+        }
+        self.init(response: json)
     }
 }
 
 extension Response {
     public init(response: SKResponse) {
-        if let text = response.text.data(using: .utf8), response.attachments == nil, response.responseType == nil {
-            self.init(body: Buffer([UInt8](text)))
-        } else if let data = try? JSONSerialization.data(withJSONObject: response.json, options: []) {
-            self.init(status: .ok, headers: ["content-type":"application/json"], body: Buffer([UInt8](data)))
+        if response.attachments == nil {
+            self.init(200, response.text)
+        } else if let data = try? JSONSerialization.data(withJSONObject: response.json, options: []), let body = String(data: data, encoding: .utf8) {
+            self.init(code: 200, body: body, headers: [("content-type","application/json")])
         } else {
-            self.init(status: .badRequest)
+            self.init(400)
         }
     }
 }

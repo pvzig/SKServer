@@ -21,16 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
-
 public struct AuthorizeResponse {
     
     var code: String?
     var state: String?
     
-    init?(queryItems: [URLQueryItem]) {
+    init?(queryItems: [String: String]) {
         for item in queryItems {
-            switch item.name {
+            switch item.key {
             case "code":
                 self.code = item.value
             case "state":

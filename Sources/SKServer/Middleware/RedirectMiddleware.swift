@@ -21,30 +21,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import HTTP
+import Titan
 
-public struct RedirectMiddleware : Middleware {
-    let location: String
-    let shouldRedirect: (Request) -> Bool
+public struct RedirectMiddleware: Middleware {
     
-    public init(redirectTo location: String, if shouldRedirect: @escaping (Request) -> Bool) {
+    let location: String
+    let shouldRedirect: (RequestType) -> Bool
+    
+    public init(redirectTo location: String, if shouldRedirect: @escaping (RequestType) -> Bool) {
         self.location = location
         self.shouldRedirect = shouldRedirect
     }
     
-    public func respond(to request: Request, chainingTo chain: Responder) throws -> Response {
-        if shouldRedirect(request) {
-            return Response(redirectTo: location)
+    public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
+        if shouldRedirect(request.0) {
+            return (request.0, Response(code: 302, body: "", headers: [("location", location)]))
         }
-    
-        return try chain.respond(to: request)
-    }
-}
-
-extension Response {
-    public init(redirectTo location: String, headers: Headers = [:]) {
-        var headers = headers
-        headers["location"] = location
-        self.init(status: .found, headers: headers)
+        return request
     }
 }

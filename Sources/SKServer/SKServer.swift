@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 
 @_exported import SKCore
-@_exported import Titan
+import Titan
 
 public protocol SlackKitServer {
     func start()
@@ -55,9 +55,7 @@ public final class SKServer {
     }
     
     private static func oauthRequestRoute(config: OAuthConfig) -> RequestRoute {
-        let oauth = OAuthMiddleware(config: config) { (response) in
-            print(response)
-        }
+        let oauth = OAuthMiddleware(config: config)
         return RequestRoute(path: "/oauth", middleware: oauth)
     }
     

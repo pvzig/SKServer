@@ -26,20 +26,24 @@ import Titan
 public struct MessageActionMiddleware: Middleware {
     
     let token: String
-    let responder: MessageActionResponder
-
-    public init(token: String, responder: MessageActionResponder) {
+    let routes: [MessageActionRoute]
+    
+    public init(token: String, routes: [MessageActionRoute]) {
         self.token = token
-        self.responder = responder
+        self.routes = routes
     }
     
     public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
         if let form = request.0.formURLEncodedBody.first(where: {$0.name == "ssl_check"}), form.value == "1" {
             return (request.0, Response(200))
         }
-        if let action = MessageActionRequest(request: request.0), let middleware = responder.routes(action), action.token == token {
-            return middleware.respond(to: request)
+        guard
+            let actionRequest = MessageActionRequest(request: request.0),
+            let middleware = routes.first(where: {$0.action.name == actionRequest.action?.name})?.middleware,
+            actionRequest.token == token
+        else {
+            return (request.0, Response(400))
         }
-        return (request.0, Response(400))
+        return middleware.respond(to: request)
     }
 }

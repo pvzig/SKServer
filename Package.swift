@@ -14,7 +14,7 @@ let package = Package(
 
 var dependency: Package.Dependency
 #if os(macOS) || os(iOS) || os(tvOS)
-dependency = .Package(url: "https://github.com/httpswift/swifter.git", "1.3.2")
+dependency = .Package(url: "https://github.com/httpswift/swifter.git", "1.3.3")
 #else
 dependency = .Package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter", majorVersion: 0)
 #endif

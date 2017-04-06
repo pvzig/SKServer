@@ -1,19 +1,19 @@
 use_frameworks!
 
-target 'SKWebAPI macOS' do
+target 'SKServer macOS' do
 	pod 'SKCore'
 	pod 'SKWebAPI'
-	pod 'Starscream'
+	pod 'Swifter'
 end
 
-target 'SKWebAPI iOS' do
+target 'SKServer iOS' do
 	pod 'SKCore'
 	pod 'SKWebAPI'
-	pod 'Starscream'
+	pod 'Swifter'
 end
 
-target 'SKWebAPI tvOS' do
+target 'SKServer tvOS' do
 	pod 'SKCore'
 	pod 'SKWebAPI'
-	pod 'Starscream'
+	pod 'Swifter'
 end

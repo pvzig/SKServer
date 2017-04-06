@@ -9,7 +9,8 @@ let package = Package(
         .Package(url: "https://github.com/SlackKit/SKCore", "4.0.0"),
         .Package(url: "https://github.com/SlackKit/SKWebAPI", "4.0.0"),
         .Package(url: "https://github.com/bermudadigitalstudio/Titan", "0.7.0")
-    ]
+    ],
+    exclude: ["Sources/SKServer/Titan"]
 )
 
 var dependency: Package.Dependency

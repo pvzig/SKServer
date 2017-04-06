@@ -23,8 +23,8 @@
 
 #if os(Linux)
 import Dispatch
-#endif
 import Titan
+#endif
 
 public struct SlackKitResponder: Middleware {
     

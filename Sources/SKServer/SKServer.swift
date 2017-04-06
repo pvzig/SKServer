@@ -22,7 +22,9 @@
 // THE SOFTWARE.
 
 @_exported import SKCore
+#if os(Linux)
 import Titan
+#endif
 
 public protocol SlackKitServer {
     func start()

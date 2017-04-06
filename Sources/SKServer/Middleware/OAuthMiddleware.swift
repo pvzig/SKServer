@@ -23,7 +23,9 @@
 
 import SKCore
 import SKWebAPI
+#if os(Linux)
 import Titan
+#endif
 
 public struct OAuthMiddleware: Middleware {
 

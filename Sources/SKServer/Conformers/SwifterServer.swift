@@ -24,7 +24,6 @@
 #if os(macOS) || os(iOS) || os(tvOS)
 import Foundation
 import Swifter
-import Titan
 
 class SwifterServer: SlackKitServer {
     

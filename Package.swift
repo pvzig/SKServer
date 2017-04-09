@@ -12,12 +12,16 @@ let package = Package(
 )
 
 var dependencies: [Package.Dependency]
+var exclude: [String]
 #if os(macOS) || os(iOS) || os(tvOS)
 dependencies = [.Package(url: "https://github.com/httpswift/swifter.git", "1.3.3")]
+exclude = []
 #else
 dependencies = [
-    .Package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter", "0.4.0"),
+    .Package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter", "0.5.0"),
     .Package(url: "https://github.com/bermudadigitalstudio/Titan", "0.7.0")
 ]
+exclude = ["Sources/SKServer/Titan"]
 #endif
 package.dependencies.append(contentsOf: dependencies)
+package.exclude.append(contentsOf: exclude)

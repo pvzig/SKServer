@@ -18,7 +18,7 @@ dependencies = [.Package(url: "https://github.com/httpswift/swifter.git", "1.3.3
 exclude = []
 #else
 dependencies = [
-    .Package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter", "0.4.0"),
+    .Package(url: "https://github.com/bermudadigitalstudio/TitanKituraAdapter", "0.5.0"),
     .Package(url: "https://github.com/bermudadigitalstudio/Titan", "0.7.0")
 ]
 exclude = ["Sources/SKServer/Titan"]

@@ -22,9 +22,6 @@
 // THE SOFTWARE.
 
 import Foundation
-#if os(Linux)
-import Titan
-#endif
 
 public struct ResponseMiddleware: Middleware {
     

@@ -71,7 +71,11 @@ extension ResponseType {
             }
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
+                #if os(Linux)
                 return .ok(.json(json as! AnyObject))
+                #else
+                return .ok(.json(json as AnyObject))
+                #endif
             } catch let error {
                 return .badRequest(.text(error.localizedDescription))
             }

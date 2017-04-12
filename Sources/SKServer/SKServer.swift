@@ -43,7 +43,7 @@ public final class SKServer {
             self.server = server
         } else {
             #if os(Linux)
-                self.server = KituraServer(responder: responder)
+                self.server = SwifterServer(responder: responder)
             #else
                 self.server = SwifterServer(responder: responder)
             #endif

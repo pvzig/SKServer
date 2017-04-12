@@ -84,10 +84,18 @@ server.start()
 OAuth is configured by default to use the `/oauth` route.
 
 ### Middleware
-Use the provided `ResponseMiddleware` (or create your own custom middleware) to respond to requests.
+Use the provided `ResponseMiddleware` to respond to requests:
 
 ```swift
 let middleware = ResponseMiddleware(token: "xoxp-SLACK_AUTH_TOKEN", response: SKResponse(text: "👋"))
+```
+
+Or create your own custom middleware by conforming to the `Middleware` protocol:
+
+```swift
+public protocol Middleware {
+    func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType)
+}
 ```
 
 ### RequestRoute

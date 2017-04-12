@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		266686991E95C24200777D94 /* KituraServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686871E95C24200777D94 /* KituraServer.swift */; };
-		2666869A1E95C24200777D94 /* KituraServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686871E95C24200777D94 /* KituraServer.swift */; };
-		2666869B1E95C24200777D94 /* KituraServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686871E95C24200777D94 /* KituraServer.swift */; };
 		2666869C1E95C24200777D94 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686881E95C24200777D94 /* SwifterServer.swift */; };
 		2666869D1E95C24200777D94 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686881E95C24200777D94 /* SwifterServer.swift */; };
 		2666869E1E95C24200777D94 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686881E95C24200777D94 /* SwifterServer.swift */; };
@@ -94,7 +91,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		266686871E95C24200777D94 /* KituraServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraServer.swift; sourceTree = "<group>"; };
 		266686881E95C24200777D94 /* SwifterServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterServer.swift; sourceTree = "<group>"; };
 		2666868A1E95C24200777D94 /* MessageActionMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageActionMiddleware.swift; sourceTree = "<group>"; };
 		2666868B1E95C24200777D94 /* OAuthMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthMiddleware.swift; sourceTree = "<group>"; };
@@ -177,7 +173,6 @@
 		266686861E95C24200777D94 /* Conformers */ = {
 			isa = PBXGroup;
 			children = (
-				266686871E95C24200777D94 /* KituraServer.swift */,
 				266686881E95C24200777D94 /* SwifterServer.swift */,
 			);
 			path = Conformers;
@@ -427,7 +422,6 @@
 				266686B71E95C24200777D94 /* OAuthResponse.swift in Sources */,
 				266686F71E95C26400777D94 /* TitanErrorHandling.swift in Sources */,
 				266686B41E95C24200777D94 /* MessageActionRoute.swift in Sources */,
-				266686991E95C24200777D94 /* KituraServer.swift in Sources */,
 				266686DF1E95C26400777D94 /* PathParameterSupport.swift in Sources */,
 				266686A81E95C24200777D94 /* ResponseMiddleware.swift in Sources */,
 				266686FD1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */,
@@ -462,7 +456,6 @@
 				266686B81E95C24200777D94 /* OAuthResponse.swift in Sources */,
 				266686F81E95C26400777D94 /* TitanErrorHandling.swift in Sources */,
 				266686B51E95C24200777D94 /* MessageActionRoute.swift in Sources */,
-				2666869A1E95C24200777D94 /* KituraServer.swift in Sources */,
 				266686E01E95C26400777D94 /* PathParameterSupport.swift in Sources */,
 				266686A91E95C24200777D94 /* ResponseMiddleware.swift in Sources */,
 				266686FE1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */,
@@ -497,7 +490,6 @@
 				266686B91E95C24200777D94 /* OAuthResponse.swift in Sources */,
 				266686F91E95C26400777D94 /* TitanErrorHandling.swift in Sources */,
 				266686B61E95C24200777D94 /* MessageActionRoute.swift in Sources */,
-				2666869B1E95C24200777D94 /* KituraServer.swift in Sources */,
 				266686E11E95C26400777D94 /* PathParameterSupport.swift in Sources */,
 				266686AA1E95C24200777D94 /* ResponseMiddleware.swift in Sources */,
 				266686FF1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */,

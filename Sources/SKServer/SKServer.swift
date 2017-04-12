@@ -42,11 +42,7 @@ public final class SKServer {
         if let server = server {
             self.server = server
         } else {
-            #if os(Linux)
-                self.server = SwifterServer(responder: responder)
-            #else
-                self.server = SwifterServer(responder: responder)
-            #endif
+            self.server = SwifterServer(responder: responder)
         }
     }
     

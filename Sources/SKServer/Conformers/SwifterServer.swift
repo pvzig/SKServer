@@ -21,7 +21,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#if os(macOS) || os(iOS) || os(tvOS)
 import Foundation
 import Swifter
 
@@ -72,7 +71,7 @@ extension ResponseType {
             }
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                return .ok(.json(json as AnyObject))
+                return .ok(.json(json as! AnyObject))
             } catch let error {
                 return .badRequest(.text(error.localizedDescription))
             }
@@ -83,4 +82,3 @@ extension ResponseType {
         }
     }
 }
-#endif

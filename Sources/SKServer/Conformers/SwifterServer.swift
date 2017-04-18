@@ -48,6 +48,10 @@ class SwifterServer: SlackKitServer {
             print("Server failed to start with error: \(error)")
         }
     }
+    
+    deinit {
+        server.stop()
+    }
 }
     
 extension HttpRequest {

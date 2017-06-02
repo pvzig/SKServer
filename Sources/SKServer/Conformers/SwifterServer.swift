@@ -44,7 +44,7 @@ class SwifterServer: SlackKitServer {
     public func start() {
         do {
             try server.start(port, forceIPv4: forceIPV4)
-        } catch let error as NSError {
+        } catch let error {
             print("Server failed to start with error: \(error)")
         }
     }

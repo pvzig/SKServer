@@ -1,0 +1,3 @@
+github "SlackKit/SKCore" >= 4.0.0
+github "SlackKit/SKWebAPI" >= 4.0.0
+github "httpswift/swifter" == 1.3.3

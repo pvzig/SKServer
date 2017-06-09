@@ -22,7 +22,6 @@
 // THE SOFTWARE.
 
 public struct WebhookRequest {
-    
     public let token: String?
     public let teamID: String?
     public let teamDomain: String?
@@ -35,7 +34,7 @@ public struct WebhookRequest {
     public let text: String?
     public let triggerWord: String?
     public let responseURL: String?
-    
+
     internal init(request: [String: Any]?) {
         token = request?["token"] as? String
         teamID = request?["team_id"] as? String

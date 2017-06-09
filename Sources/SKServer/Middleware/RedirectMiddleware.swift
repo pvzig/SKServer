@@ -22,15 +22,14 @@
 // SOFTWARE.
 
 public struct RedirectMiddleware: Middleware {
-    
     let location: String
     let shouldRedirect: (RequestType) -> Bool
-    
+
     public init(redirectTo location: String, if shouldRedirect: @escaping (RequestType) -> Bool) {
         self.location = location
         self.shouldRedirect = shouldRedirect
     }
-    
+
     public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
         if shouldRedirect(request.0) {
             return (request.0, Response(code: 302, body: "", headers: [("location", location)]))

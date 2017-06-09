@@ -24,10 +24,9 @@
 import SKCore
 
 public struct MessageActionRoute {
-    
     let action: Action
     let middleware: Middleware
-    
+
     public init(action: Action, middleware: Middleware) {
         self.action = action
         self.middleware = middleware

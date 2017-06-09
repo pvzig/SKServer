@@ -25,18 +25,19 @@
 import Dispatch
 #endif
 
+//swiftlint:disable line_length
 public struct SlackKitResponder: Middleware {
-    
+
     public var routes: [RequestRoute]
-    
+
     public init(routes: [RequestRoute]) {
         self.routes = routes
     }
-    
+
     public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
         if let form = request.0.formURLEncodedBody.first(where: {$0.name == "ssl_check"}), form.value == "1" {
             return (request.0, Response(200))
         }
-        return routes.filter{$0.path == request.0.path}.first?.middleware.respond(to: (request.0, request.1)) ?? (request.0, Response(404))
+        return routes.filter { $0.path == request.0.path }.first?.middleware.respond(to: (request.0, request.1)) ?? (request.0, Response(404))
     }
 }

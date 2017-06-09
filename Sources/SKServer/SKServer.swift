@@ -32,7 +32,6 @@ public protocol Middleware {
 }
 
 public final class SKServer {
-    
     internal let server: SlackKitServer
 
     public init?(server: SlackKitServer? = nil, responder: SlackKitResponder) {
@@ -42,18 +41,18 @@ public final class SKServer {
             self.server = SwifterServer(responder: responder)
         }
     }
-    
+
     public convenience init?(server: SlackKitServer? = nil, responder: SlackKitResponder, oauth: OAuthConfig) {
         var res = responder
         res.routes.append(SKServer.oauthRequestRoute(config: oauth))
         self.init(server: server, responder: res)
     }
-    
+
     private static func oauthRequestRoute(config: OAuthConfig) -> RequestRoute {
         let oauth = OAuthMiddleware(config: config)
         return RequestRoute(path: "/oauth", middleware: oauth)
     }
-    
+
     public func start() {
         server.start()
     }

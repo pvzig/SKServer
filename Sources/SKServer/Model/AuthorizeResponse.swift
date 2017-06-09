@@ -22,10 +22,9 @@
 // THE SOFTWARE.
 
 public struct AuthorizeResponse {
-    
     var code: String?
     var state: String?
-    
+
     init?(queryItems: [String: String]) {
         for item in queryItems {
             switch item.key {

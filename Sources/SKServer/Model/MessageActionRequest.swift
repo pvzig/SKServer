@@ -24,7 +24,6 @@
 import SKCore
 
 public struct MessageActionRequest {
-    
     public let action: Action?
     public let callbackID: String?
     public let team: Team?
@@ -36,7 +35,7 @@ public struct MessageActionRequest {
     public let token: String?
     public let originalMessage: Message?
     public let responseURL: String?
-    
+
     internal init(response: [String: Any]?) {
         action = (response?["actions"] as? [Any])?.map({$0 as? [String: Any]}).first.map({Action(action: $0)})
         callbackID = response?["callback_id"] as? String

@@ -24,26 +24,24 @@
 import Foundation
 
 public struct ResponseMiddleware: Middleware {
-    
     let token: String
     let response: SKResponse
-    
+
     public init(token: String, response: SKResponse) {
         self.token = token
         self.response = response
     }
-    
+
     public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
         if let respondable = Respondable(request: request.0), respondable.token == token {
             return (request.0, Response(response: response))
         }
         return (request.0, Response(400))
     }
-    
+
     private struct Respondable {
-        
         let token: String
-        
+
         init?(request: RequestType) {
             if let webhook = WebhookRequest(request: request), let token = webhook.token {
                 self.token = token
@@ -89,8 +87,10 @@ extension Response {
     public init(response: SKResponse) {
         if response.attachments == nil {
             self.init(200, response.text)
-        } else if let data = try? JSONSerialization.data(withJSONObject: response.json, options: []), let body = String(data: data, encoding: .utf8) {
-            self.init(code: 200, body: body, headers: [("content-type","application/json")])
+        } else if
+        let data = try? JSONSerialization.data(withJSONObject: response.json, options: []),
+        let body = String(data: data, encoding: .utf8) {
+            self.init(code: 200, body: body, headers: [("content-type", "application/json")])
         } else {
             self.init(400)
         }

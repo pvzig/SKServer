@@ -22,14 +22,13 @@
 // THE SOFTWARE.
 
 public struct IncomingWebhook {
-    
     public let url: String?
     public let channel: String?
     public let configurationURL: String?
     public let username: String?
     public let iconEmoji: String?
     public let iconURL: String?
-    
+
     internal init(webhook: [String: Any]?) {
         url = webhook?["url"] as? String
         channel = webhook?["channel"] as? String

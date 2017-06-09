@@ -25,22 +25,21 @@ import Foundation
 import Swifter
 
 class SwifterServer: SlackKitServer {
-    
     let server = HttpServer()
     let port: in_port_t
     let forceIPV4: Bool
-    
+
     init(port: in_port_t = 8080, forceIPV4: Bool = false, responder: SlackKitResponder) {
         self.port = port
         self.forceIPV4 = forceIPV4
-        
+
         for route in responder.routes {
             server[route.path] = { request in
                 return route.middleware.respond(to: (request.request, Response())).1.httpResponse
             }
         }
     }
-    
+
     public func start() {
         do {
             try server.start(port, forceIPv4: forceIPV4)
@@ -48,15 +47,15 @@ class SwifterServer: SlackKitServer {
             print("Server failed to start with error: \(error)")
         }
     }
-    
+
     deinit {
         server.stop()
     }
 }
-    
+
 extension HttpRequest {
     public var request: RequestType {
-        return Request(self.method, self.path, String(bytes: self.body, encoding: .utf8) ?? "", self.headers.map{($0.key, $0.value)})
+        return Request(self.method, self.path, String(bytes: self.body, encoding: .utf8) ?? "", self.headers.map {($0.key, $0.value) })
     }
 }
 
@@ -64,7 +63,7 @@ extension ResponseType {
     public var contentType: String? {
         return self.headers.first(where: {$0.name.lowercased() == "content-type"})?.value
     }
-    
+
     public var httpResponse: HttpResponse {
         switch self.code {
         case 200 where contentType == nil:
@@ -76,9 +75,11 @@ extension ResponseType {
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 #if os(Linux)
-                return .ok(.json(json as! AnyObject))
+                    //swiftlint:disable force_cast
+                    return .ok(.json(json as! AnyObject))
+                    //swiftlint:enable force_cast
                 #else
-                return .ok(.json(json as AnyObject))
+                    return .ok(.json(json as AnyObject))
                 #endif
             } catch let error {
                 return .badRequest(.text(error.localizedDescription))

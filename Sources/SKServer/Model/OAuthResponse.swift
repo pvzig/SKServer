@@ -24,7 +24,6 @@
 import SKCore
 
 public struct OAuthResponse {
-    
     public let accessToken: String?
     public let scope: [Scope]?
     public let userID: String?
@@ -32,10 +31,10 @@ public struct OAuthResponse {
     public let teamID: String?
     public let incomingWebhook: IncomingWebhook?
     public let bot: Bot?
-    
+
     internal init(response: [String: Any]?) {
         accessToken = response?["access_token"] as? String
-        scope = (response?["scope"] as? String)?.components(separatedBy: ",").flatMap{Scope(rawValue: $0)}
+        scope = (response?["scope"] as? String)?.components(separatedBy: ",").flatMap { Scope(rawValue: $0) }
         userID = response?["user_id"] as? String
         teamName = response?["team_name"] as? String
         teamID = response?["team_id"] as? String

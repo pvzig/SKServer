@@ -25,25 +25,24 @@ import Foundation
 import SKCore
 
 public struct SKResponse {
-    
     let text: String
     let responseType: MessageResponseType
     let attachments: [Attachment]?
-    
+
     public init(text: String, responseType: MessageResponseType = .inChannel, attachments: [Attachment]? = nil) {
         self.responseType = responseType
         self.text = text
         self.attachments = attachments
     }
-    
+
     internal var json: [String: Any] {
-        var json = [String : Any]()
+        var json = [String: Any]()
         json["text"] = text
         json["response_type"] = responseType.rawValue
         json["attachments"] = attachments?.map({$0.dictionary})
         return json
     }
-    
+
     internal var data: Data? {
         return try? JSONSerialization.data(withJSONObject: self.json, options: [])
     }

@@ -22,10 +22,9 @@
 // THE SOFTWARE.
 
 public struct RequestRoute {
-    
     let path: String
     let middleware: Middleware
-    
+
     public init(path: String, middleware: Middleware) {
         self.path = path
         self.middleware = middleware

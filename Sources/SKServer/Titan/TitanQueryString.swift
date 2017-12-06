@@ -19,11 +19,10 @@ import class Foundation.NSString
 
 public extension RequestType {
   public var queryPairs: [(key: String, value: String)] {
-    let chars = self.path.characters
-    guard let indexOfQuery = chars.index(of: "?") else {
+    guard let indexOfQuery = self.path.index(of: "?") else {
       return []
     }
-    let query = chars.suffix(from: indexOfQuery).dropFirst()
+    let query = self.path.suffix(from: indexOfQuery).dropFirst()
     let pairs = query.split(separator: "&")
     return pairs.map { pair -> (key: String, value: String) in
       let comps = pair.split(separator: "=").map { chars -> String in

@@ -62,7 +62,7 @@ extension WebhookRequest {
         else {
             return nil
         }
-        let requestString = proto + host + request.path + "?" + request.body
+        let requestString = proto + host + request.path + "?" + request.body!
         let components = URLComponents(string: requestString)
         var dict = [String: Any]()
         _ = components?.queryItems.flatMap {$0.map({dict[$0.name]=$0.value})}
@@ -86,11 +86,11 @@ extension MessageActionRequest {
 extension Response {
     public init(response: SKResponse) {
         if response.attachments == nil {
-            self.init(200, response.text)
+            try! self.init(200, response.text)
         } else if
         let data = try? JSONSerialization.data(withJSONObject: response.json, options: []),
         let body = String(data: data, encoding: .utf8) {
-            self.init(code: 200, body: body, headers: [("content-type", "application/json")])
+            try! self.init(code: 200, body: body, headers: HTTPHeaders(headers: [Header(name: "content-type", value: "application/json")]))
         } else {
             self.init(400)
         }

@@ -55,7 +55,12 @@ class SwifterServer: SlackKitServer {
 
 extension HttpRequest {
     public var request: RequestType {
-        return Request(self.method, self.path, String(bytes: self.body, encoding: .utf8) ?? "", self.headers.map {($0.key, $0.value) })
+        return try! Request(
+            method: HTTPMethod.custom(named: method),
+            path: path,
+            body: String(bytes: body, encoding: .utf8) ?? "",
+            headers: HTTPHeaders(headers: headers.map ({ Header(name: $0.key, value: $0.value) }))
+        )
     }
 }
 
@@ -67,13 +72,10 @@ extension ResponseType {
     public var httpResponse: HttpResponse {
         switch self.code {
         case 200 where contentType == nil:
-            return .ok(.text(body))
+            return .ok(.text(bodyString ?? ""))
         case 200 where contentType?.lowercased() == "application/json":
-            guard let data = body.data(using: .utf8) else {
-                return .badRequest(.text("Bad request."))
-            }
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                let json = try JSONSerialization.jsonObject(with: body, options: [])
                 #if os(Linux)
                     //swiftlint:disable force_cast
                     return .ok(.json(json as! AnyObject))

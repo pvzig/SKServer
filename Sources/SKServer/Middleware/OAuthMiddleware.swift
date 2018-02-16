@@ -47,6 +47,6 @@ public struct OAuthMiddleware: Middleware {
         guard let redirect = config.redirectURI else {
             return (request.0, Response(200))
         }
-        return (request.0, Response(code: 302, body: "", headers: [("location", redirect)]))
+        return (request.0, try! Response(code: 302, body: "", headers: HTTPHeaders(headers: [Header(name: "location", value: redirect)])))
     }
 }

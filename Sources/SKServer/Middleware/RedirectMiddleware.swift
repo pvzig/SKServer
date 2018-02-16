@@ -32,7 +32,7 @@ public struct RedirectMiddleware: Middleware {
 
     public func respond(to request: (RequestType, ResponseType)) -> (RequestType, ResponseType) {
         if shouldRedirect(request.0) {
-            return (request.0, Response(code: 302, body: "", headers: [("location", location)]))
+            return (request.0, try! Response(302, "", HTTPHeaders(headers: [Header(name: "location", value: location)])))
         }
         return request
     }

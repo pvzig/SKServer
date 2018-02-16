@@ -7,6 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2604C60B202C1769009CDBAF /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EA202C1769009CDBAF /* PathParameterSupport.swift */; };
+		2604C60C202C1769009CDBAF /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EA202C1769009CDBAF /* PathParameterSupport.swift */; };
+		2604C60D202C1769009CDBAF /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EA202C1769009CDBAF /* PathParameterSupport.swift */; };
+		2604C60E202C1769009CDBAF /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EB202C1769009CDBAF /* TitanRoutingExtension.swift */; };
+		2604C60F202C1769009CDBAF /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EB202C1769009CDBAF /* TitanRoutingExtension.swift */; };
+		2604C610202C1769009CDBAF /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EB202C1769009CDBAF /* TitanRoutingExtension.swift */; };
+		2604C611202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C5EC202C1769009CDBAF /* README.md */; };
+		2604C612202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C5EC202C1769009CDBAF /* README.md */; };
+		2604C613202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C5EC202C1769009CDBAF /* README.md */; };
+		2604C614202C1769009CDBAF /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5ED202C1769009CDBAF /* InitializerOverloads.swift */; };
+		2604C615202C1769009CDBAF /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5ED202C1769009CDBAF /* InitializerOverloads.swift */; };
+		2604C616202C1769009CDBAF /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5ED202C1769009CDBAF /* InitializerOverloads.swift */; };
+		2604C617202C1769009CDBAF /* TitanRoutesByMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EE202C1769009CDBAF /* TitanRoutesByMethod.swift */; };
+		2604C618202C1769009CDBAF /* TitanRoutesByMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EE202C1769009CDBAF /* TitanRoutesByMethod.swift */; };
+		2604C619202C1769009CDBAF /* TitanRoutesByMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EE202C1769009CDBAF /* TitanRoutesByMethod.swift */; };
+		2604C61A202C1769009CDBAF /* TitanParameterizedRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EF202C1769009CDBAF /* TitanParameterizedRoutes.swift */; };
+		2604C61B202C1769009CDBAF /* TitanParameterizedRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EF202C1769009CDBAF /* TitanParameterizedRoutes.swift */; };
+		2604C61C202C1769009CDBAF /* TitanParameterizedRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5EF202C1769009CDBAF /* TitanParameterizedRoutes.swift */; };
+		2604C61D202C1769009CDBAF /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F1202C1769009CDBAF /* TitanJSONRequestBody.swift */; };
+		2604C61E202C1769009CDBAF /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F1202C1769009CDBAF /* TitanJSONRequestBody.swift */; };
+		2604C61F202C1769009CDBAF /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F1202C1769009CDBAF /* TitanJSONRequestBody.swift */; };
+		2604C620202C1769009CDBAF /* TitanJSONResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F2202C1769009CDBAF /* TitanJSONResponseBody.swift */; };
+		2604C621202C1769009CDBAF /* TitanJSONResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F2202C1769009CDBAF /* TitanJSONResponseBody.swift */; };
+		2604C622202C1769009CDBAF /* TitanJSONResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F2202C1769009CDBAF /* TitanJSONResponseBody.swift */; };
+		2604C623202C1769009CDBAF /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F4202C1769009CDBAF /* TitanQueryString.swift */; };
+		2604C624202C1769009CDBAF /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F4202C1769009CDBAF /* TitanQueryString.swift */; };
+		2604C625202C1769009CDBAF /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F4202C1769009CDBAF /* TitanQueryString.swift */; };
+		2604C626202C1769009CDBAF /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F6202C1769009CDBAF /* TitanCORS.swift */; };
+		2604C627202C1769009CDBAF /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F6202C1769009CDBAF /* TitanCORS.swift */; };
+		2604C628202C1769009CDBAF /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F6202C1769009CDBAF /* TitanCORS.swift */; };
+		2604C629202C1769009CDBAF /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F8202C1769009CDBAF /* TitanErrorHandling.swift */; };
+		2604C62A202C1769009CDBAF /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F8202C1769009CDBAF /* TitanErrorHandling.swift */; };
+		2604C62B202C1769009CDBAF /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5F8202C1769009CDBAF /* TitanErrorHandling.swift */; };
+		2604C62C202C1769009CDBAF /* TitanHealthz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FA202C1769009CDBAF /* TitanHealthz.swift */; };
+		2604C62D202C1769009CDBAF /* TitanHealthz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FA202C1769009CDBAF /* TitanHealthz.swift */; };
+		2604C62E202C1769009CDBAF /* TitanHealthz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FA202C1769009CDBAF /* TitanHealthz.swift */; };
+		2604C62F202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FC202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift */; };
+		2604C630202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FC202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift */; };
+		2604C631202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FC202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift */; };
+		2604C632202C1769009CDBAF /* TitanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FE202C1769009CDBAF /* TitanResponse.swift */; };
+		2604C633202C1769009CDBAF /* TitanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FE202C1769009CDBAF /* TitanResponse.swift */; };
+		2604C634202C1769009CDBAF /* TitanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FE202C1769009CDBAF /* TitanResponse.swift */; };
+		2604C635202C1769009CDBAF /* TitanMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FF202C1769009CDBAF /* TitanMethod.swift */; };
+		2604C636202C1769009CDBAF /* TitanMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FF202C1769009CDBAF /* TitanMethod.swift */; };
+		2604C637202C1769009CDBAF /* TitanMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C5FF202C1769009CDBAF /* TitanMethod.swift */; };
+		2604C638202C1769009CDBAF /* TitanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C600202C1769009CDBAF /* TitanHeader.swift */; };
+		2604C639202C1769009CDBAF /* TitanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C600202C1769009CDBAF /* TitanHeader.swift */; };
+		2604C63A202C1769009CDBAF /* TitanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C600202C1769009CDBAF /* TitanHeader.swift */; };
+		2604C63B202C1769009CDBAF /* TitanLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C601202C1769009CDBAF /* TitanLogs.swift */; };
+		2604C63C202C1769009CDBAF /* TitanLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C601202C1769009CDBAF /* TitanLogs.swift */; };
+		2604C63D202C1769009CDBAF /* TitanLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C601202C1769009CDBAF /* TitanLogs.swift */; };
+		2604C63E202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C602202C1769009CDBAF /* README.md */; };
+		2604C63F202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C602202C1769009CDBAF /* README.md */; };
+		2604C640202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C602202C1769009CDBAF /* README.md */; };
+		2604C641202C1769009CDBAF /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C603202C1769009CDBAF /* TitanCore.swift */; };
+		2604C642202C1769009CDBAF /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C603202C1769009CDBAF /* TitanCore.swift */; };
+		2604C643202C1769009CDBAF /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C603202C1769009CDBAF /* TitanCore.swift */; };
+		2604C644202C1769009CDBAF /* TitanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C604202C1769009CDBAF /* TitanError.swift */; };
+		2604C645202C1769009CDBAF /* TitanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C604202C1769009CDBAF /* TitanError.swift */; };
+		2604C646202C1769009CDBAF /* TitanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C604202C1769009CDBAF /* TitanError.swift */; };
+		2604C647202C1769009CDBAF /* TitanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C605202C1769009CDBAF /* TitanRequest.swift */; };
+		2604C648202C1769009CDBAF /* TitanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C605202C1769009CDBAF /* TitanRequest.swift */; };
+		2604C649202C1769009CDBAF /* TitanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C605202C1769009CDBAF /* TitanRequest.swift */; };
+		2604C64A202C1769009CDBAF /* Titan404.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C607202C1769009CDBAF /* Titan404.swift */; };
+		2604C64B202C1769009CDBAF /* Titan404.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C607202C1769009CDBAF /* Titan404.swift */; };
+		2604C64C202C1769009CDBAF /* Titan404.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C607202C1769009CDBAF /* Titan404.swift */; };
+		2604C64D202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C608202C1769009CDBAF /* README.md */; };
+		2604C64E202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C608202C1769009CDBAF /* README.md */; };
+		2604C64F202C1769009CDBAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2604C608202C1769009CDBAF /* README.md */; };
+		2604C650202C1769009CDBAF /* Titan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C60A202C1769009CDBAF /* Titan.swift */; };
+		2604C651202C1769009CDBAF /* Titan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C60A202C1769009CDBAF /* Titan.swift */; };
+		2604C652202C1769009CDBAF /* Titan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C60A202C1769009CDBAF /* Titan.swift */; };
 		2666869C1E95C24200777D94 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686881E95C24200777D94 /* SwifterServer.swift */; };
 		2666869D1E95C24200777D94 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686881E95C24200777D94 /* SwifterServer.swift */; };
 		2666869E1E95C24200777D94 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686881E95C24200777D94 /* SwifterServer.swift */; };
@@ -52,42 +124,6 @@
 		266686C61E95C24200777D94 /* SlackKitResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686981E95C24200777D94 /* SlackKitResponder.swift */; };
 		266686C71E95C24200777D94 /* SlackKitResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686981E95C24200777D94 /* SlackKitResponder.swift */; };
 		266686C81E95C24200777D94 /* SlackKitResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686981E95C24200777D94 /* SlackKitResponder.swift */; };
-		266686DC1E95C26400777D94 /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CC1E95C26400777D94 /* InitializerOverloads.swift */; };
-		266686DD1E95C26400777D94 /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CC1E95C26400777D94 /* InitializerOverloads.swift */; };
-		266686DE1E95C26400777D94 /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CC1E95C26400777D94 /* InitializerOverloads.swift */; };
-		266686DF1E95C26400777D94 /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CD1E95C26400777D94 /* PathParameterSupport.swift */; };
-		266686E01E95C26400777D94 /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CD1E95C26400777D94 /* PathParameterSupport.swift */; };
-		266686E11E95C26400777D94 /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CD1E95C26400777D94 /* PathParameterSupport.swift */; };
-		266686E21E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CE1E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift */; };
-		266686E31E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CE1E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift */; };
-		266686E41E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CE1E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift */; };
-		266686E51E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CF1E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift */; };
-		266686E61E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CF1E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift */; };
-		266686E71E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686CF1E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift */; };
-		266686E81E95C26400777D94 /* TitanParameterizedRoutes.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D01E95C26400777D94 /* TitanParameterizedRoutes.generated.swift */; };
-		266686E91E95C26400777D94 /* TitanParameterizedRoutes.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D01E95C26400777D94 /* TitanParameterizedRoutes.generated.swift */; };
-		266686EA1E95C26400777D94 /* TitanParameterizedRoutes.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D01E95C26400777D94 /* TitanParameterizedRoutes.generated.swift */; };
-		266686EB1E95C26400777D94 /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D11E95C26400777D94 /* TitanRoutingExtension.swift */; };
-		266686EC1E95C26400777D94 /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D11E95C26400777D94 /* TitanRoutingExtension.swift */; };
-		266686ED1E95C26400777D94 /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D11E95C26400777D94 /* TitanRoutingExtension.swift */; };
-		266686F11E95C26400777D94 /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D31E95C26400777D94 /* TitanCore.swift */; };
-		266686F21E95C26400777D94 /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D31E95C26400777D94 /* TitanCore.swift */; };
-		266686F31E95C26400777D94 /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D31E95C26400777D94 /* TitanCore.swift */; };
-		266686F41E95C26400777D94 /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D41E95C26400777D94 /* TitanCORS.swift */; };
-		266686F51E95C26400777D94 /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D41E95C26400777D94 /* TitanCORS.swift */; };
-		266686F61E95C26400777D94 /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D41E95C26400777D94 /* TitanCORS.swift */; };
-		266686F71E95C26400777D94 /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D51E95C26400777D94 /* TitanErrorHandling.swift */; };
-		266686F81E95C26400777D94 /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D51E95C26400777D94 /* TitanErrorHandling.swift */; };
-		266686F91E95C26400777D94 /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D51E95C26400777D94 /* TitanErrorHandling.swift */; };
-		266686FA1E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D61E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift */; };
-		266686FB1E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D61E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift */; };
-		266686FC1E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D61E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift */; };
-		266686FD1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D71E95C26400777D94 /* TitanJSONRequestBody.swift */; };
-		266686FE1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D71E95C26400777D94 /* TitanJSONRequestBody.swift */; };
-		266686FF1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D71E95C26400777D94 /* TitanJSONRequestBody.swift */; };
-		266687001E95C26400777D94 /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D81E95C26400777D94 /* TitanQueryString.swift */; };
-		266687011E95C26400777D94 /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D81E95C26400777D94 /* TitanQueryString.swift */; };
-		266687021E95C26400777D94 /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266686D81E95C26400777D94 /* TitanQueryString.swift */; };
 		26D1C4E71EE4718700C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4E41EE4718700C95954 /* SKCore.framework */; };
 		26D1C4E81EE4718700C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4E51EE4718700C95954 /* SKWebAPI.framework */; };
 		26D1C4E91EE4718700C95954 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4E61EE4718700C95954 /* Swifter.framework */; };
@@ -97,9 +133,37 @@
 		26D1C4F31EE4719D00C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4F01EE4719D00C95954 /* SKCore.framework */; };
 		26D1C4F41EE4719D00C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4F11EE4719D00C95954 /* SKWebAPI.framework */; };
 		26D1C4F51EE4719D00C95954 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4F21EE4719D00C95954 /* Swifter.framework */; };
+		3738C70F352EFDBA27E6CFD4 /* Pods_SKServer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC85050CB50C828BF86A90B /* Pods_SKServer_iOS.framework */; };
+		4325951D47D7393AC333A768 /* Pods_SKServer_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107E3414578AC3052D639BB /* Pods_SKServer_tvOS.framework */; };
+		A28E0EA90C29BFAC842C2D95 /* Pods_SKServer_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B4194C5786114360904DC0 /* Pods_SKServer_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6927E44E012557934ECFCF /* Pods-SKServer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKServer iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKServer iOS/Pods-SKServer iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2604C5EA202C1769009CDBAF /* PathParameterSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathParameterSupport.swift; sourceTree = "<group>"; };
+		2604C5EB202C1769009CDBAF /* TitanRoutingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanRoutingExtension.swift; sourceTree = "<group>"; };
+		2604C5EC202C1769009CDBAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2604C5ED202C1769009CDBAF /* InitializerOverloads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitializerOverloads.swift; sourceTree = "<group>"; };
+		2604C5EE202C1769009CDBAF /* TitanRoutesByMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanRoutesByMethod.swift; sourceTree = "<group>"; };
+		2604C5EF202C1769009CDBAF /* TitanParameterizedRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanParameterizedRoutes.swift; sourceTree = "<group>"; };
+		2604C5F1202C1769009CDBAF /* TitanJSONRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanJSONRequestBody.swift; sourceTree = "<group>"; };
+		2604C5F2202C1769009CDBAF /* TitanJSONResponseBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanJSONResponseBody.swift; sourceTree = "<group>"; };
+		2604C5F4202C1769009CDBAF /* TitanQueryString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanQueryString.swift; sourceTree = "<group>"; };
+		2604C5F6202C1769009CDBAF /* TitanCORS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanCORS.swift; sourceTree = "<group>"; };
+		2604C5F8202C1769009CDBAF /* TitanErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanErrorHandling.swift; sourceTree = "<group>"; };
+		2604C5FA202C1769009CDBAF /* TitanHealthz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanHealthz.swift; sourceTree = "<group>"; };
+		2604C5FC202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanFormURLEncodedBodyParser.swift; sourceTree = "<group>"; };
+		2604C5FE202C1769009CDBAF /* TitanResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanResponse.swift; sourceTree = "<group>"; };
+		2604C5FF202C1769009CDBAF /* TitanMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanMethod.swift; sourceTree = "<group>"; };
+		2604C600202C1769009CDBAF /* TitanHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanHeader.swift; sourceTree = "<group>"; };
+		2604C601202C1769009CDBAF /* TitanLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanLogs.swift; sourceTree = "<group>"; };
+		2604C602202C1769009CDBAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2604C603202C1769009CDBAF /* TitanCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanCore.swift; sourceTree = "<group>"; };
+		2604C604202C1769009CDBAF /* TitanError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanError.swift; sourceTree = "<group>"; };
+		2604C605202C1769009CDBAF /* TitanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanRequest.swift; sourceTree = "<group>"; };
+		2604C607202C1769009CDBAF /* Titan404.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Titan404.swift; sourceTree = "<group>"; };
+		2604C608202C1769009CDBAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2604C60A202C1769009CDBAF /* Titan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Titan.swift; sourceTree = "<group>"; };
 		266686881E95C24200777D94 /* SwifterServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterServer.swift; sourceTree = "<group>"; };
 		2666868A1E95C24200777D94 /* MessageActionMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageActionMiddleware.swift; sourceTree = "<group>"; };
 		2666868B1E95C24200777D94 /* OAuthMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthMiddleware.swift; sourceTree = "<group>"; };
@@ -115,18 +179,6 @@
 		266686961E95C24200777D94 /* WebhookRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebhookRequest.swift; sourceTree = "<group>"; };
 		266686971E95C24200777D94 /* SKServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKServer.swift; sourceTree = "<group>"; };
 		266686981E95C24200777D94 /* SlackKitResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackKitResponder.swift; sourceTree = "<group>"; };
-		266686CC1E95C26400777D94 /* InitializerOverloads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitializerOverloads.swift; sourceTree = "<group>"; };
-		266686CD1E95C26400777D94 /* PathParameterSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathParameterSupport.swift; sourceTree = "<group>"; };
-		266686CE1E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanInstanceMethodsNoLabels.generated.swift; sourceTree = "<group>"; };
-		266686CF1E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanInstanceRoutesByMethod.generated.swift; sourceTree = "<group>"; };
-		266686D01E95C26400777D94 /* TitanParameterizedRoutes.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanParameterizedRoutes.generated.swift; sourceTree = "<group>"; };
-		266686D11E95C26400777D94 /* TitanRoutingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanRoutingExtension.swift; sourceTree = "<group>"; };
-		266686D31E95C26400777D94 /* TitanCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanCore.swift; sourceTree = "<group>"; };
-		266686D41E95C26400777D94 /* TitanCORS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanCORS.swift; sourceTree = "<group>"; };
-		266686D51E95C26400777D94 /* TitanErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanErrorHandling.swift; sourceTree = "<group>"; };
-		266686D61E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanFormURLEncodedBodyParser.swift; sourceTree = "<group>"; };
-		266686D71E95C26400777D94 /* TitanJSONRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanJSONRequestBody.swift; sourceTree = "<group>"; };
-		266686D81E95C26400777D94 /* TitanQueryString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanQueryString.swift; sourceTree = "<group>"; };
 		2684F17D1E95AA6900536DCC /* SKServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F1E41E95ABD400536DCC /* SKServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F2081E95ABD600536DCC /* SKServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +192,14 @@
 		26D1C4F01EE4719D00C95954 /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/tvOS/SKCore.framework; sourceTree = "<group>"; };
 		26D1C4F11EE4719D00C95954 /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/tvOS/SKWebAPI.framework; sourceTree = "<group>"; };
 		26D1C4F21EE4719D00C95954 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/tvOS/Swifter.framework; sourceTree = "<group>"; };
+		67C8ABC8D9CB65DAC5735EBF /* Pods-SKServer tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKServer tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKServer tvOS/Pods-SKServer tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		76B133A36C10F546CAC075AC /* Pods-SKServer tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKServer tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKServer tvOS/Pods-SKServer tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		76B4194C5786114360904DC0 /* Pods_SKServer_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKServer_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8670F387DB57B25697727CC9 /* Pods-SKServer macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKServer macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKServer macOS/Pods-SKServer macOS.release.xcconfig"; sourceTree = "<group>"; };
+		8EC85050CB50C828BF86A90B /* Pods_SKServer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKServer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A107E3414578AC3052D639BB /* Pods_SKServer_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKServer_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB11F27AF1E4E8D558C8E09B /* Pods-SKServer macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKServer macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKServer macOS/Pods-SKServer macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C671F48048AFFAF692111DDB /* Pods-SKServer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKServer iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKServer iOS/Pods-SKServer iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +210,7 @@
 				26D1C4E71EE4718700C95954 /* SKCore.framework in Frameworks */,
 				26D1C4E81EE4718700C95954 /* SKWebAPI.framework in Frameworks */,
 				26D1C4E91EE4718700C95954 /* Swifter.framework in Frameworks */,
+				A28E0EA90C29BFAC842C2D95 /* Pods_SKServer_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +221,7 @@
 				26D1C4ED1EE4719100C95954 /* SKCore.framework in Frameworks */,
 				26D1C4EE1EE4719100C95954 /* SKWebAPI.framework in Frameworks */,
 				26D1C4EF1EE4719100C95954 /* Swifter.framework in Frameworks */,
+				3738C70F352EFDBA27E6CFD4 /* Pods_SKServer_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,12 +232,137 @@
 				26D1C4F31EE4719D00C95954 /* SKCore.framework in Frameworks */,
 				26D1C4F41EE4719D00C95954 /* SKWebAPI.framework in Frameworks */,
 				26D1C4F51EE4719D00C95954 /* Swifter.framework in Frameworks */,
+				4325951D47D7393AC333A768 /* Pods_SKServer_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D24C9D46EACDD1F3E72BC95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F6927E44E012557934ECFCF /* Pods-SKServer iOS.debug.xcconfig */,
+				C671F48048AFFAF692111DDB /* Pods-SKServer iOS.release.xcconfig */,
+				AB11F27AF1E4E8D558C8E09B /* Pods-SKServer macOS.debug.xcconfig */,
+				8670F387DB57B25697727CC9 /* Pods-SKServer macOS.release.xcconfig */,
+				67C8ABC8D9CB65DAC5735EBF /* Pods-SKServer tvOS.debug.xcconfig */,
+				76B133A36C10F546CAC075AC /* Pods-SKServer tvOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2604C5E8202C1769009CDBAF /* Titan */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5E9202C1769009CDBAF /* TitanRouter */,
+				2604C5F0202C1769009CDBAF /* TitanJSON */,
+				2604C5F3202C1769009CDBAF /* TitanQueryString */,
+				2604C5F5202C1769009CDBAF /* TitanCORS */,
+				2604C5F7202C1769009CDBAF /* TitanErrorHandling */,
+				2604C5F9202C1769009CDBAF /* TitanHealthz */,
+				2604C5FB202C1769009CDBAF /* TitanFormURLEncodedBodyParser */,
+				2604C5FD202C1769009CDBAF /* TitanCore */,
+				2604C606202C1769009CDBAF /* Titan404 */,
+				2604C609202C1769009CDBAF /* Titan */,
+			);
+			path = Titan;
+			sourceTree = "<group>";
+		};
+		2604C5E9202C1769009CDBAF /* TitanRouter */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5EA202C1769009CDBAF /* PathParameterSupport.swift */,
+				2604C5EB202C1769009CDBAF /* TitanRoutingExtension.swift */,
+				2604C5EC202C1769009CDBAF /* README.md */,
+				2604C5ED202C1769009CDBAF /* InitializerOverloads.swift */,
+				2604C5EE202C1769009CDBAF /* TitanRoutesByMethod.swift */,
+				2604C5EF202C1769009CDBAF /* TitanParameterizedRoutes.swift */,
+			);
+			path = TitanRouter;
+			sourceTree = "<group>";
+		};
+		2604C5F0202C1769009CDBAF /* TitanJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5F1202C1769009CDBAF /* TitanJSONRequestBody.swift */,
+				2604C5F2202C1769009CDBAF /* TitanJSONResponseBody.swift */,
+			);
+			path = TitanJSON;
+			sourceTree = "<group>";
+		};
+		2604C5F3202C1769009CDBAF /* TitanQueryString */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5F4202C1769009CDBAF /* TitanQueryString.swift */,
+			);
+			path = TitanQueryString;
+			sourceTree = "<group>";
+		};
+		2604C5F5202C1769009CDBAF /* TitanCORS */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5F6202C1769009CDBAF /* TitanCORS.swift */,
+			);
+			path = TitanCORS;
+			sourceTree = "<group>";
+		};
+		2604C5F7202C1769009CDBAF /* TitanErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5F8202C1769009CDBAF /* TitanErrorHandling.swift */,
+			);
+			path = TitanErrorHandling;
+			sourceTree = "<group>";
+		};
+		2604C5F9202C1769009CDBAF /* TitanHealthz */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5FA202C1769009CDBAF /* TitanHealthz.swift */,
+			);
+			path = TitanHealthz;
+			sourceTree = "<group>";
+		};
+		2604C5FB202C1769009CDBAF /* TitanFormURLEncodedBodyParser */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5FC202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift */,
+			);
+			path = TitanFormURLEncodedBodyParser;
+			sourceTree = "<group>";
+		};
+		2604C5FD202C1769009CDBAF /* TitanCore */ = {
+			isa = PBXGroup;
+			children = (
+				2604C5FE202C1769009CDBAF /* TitanResponse.swift */,
+				2604C5FF202C1769009CDBAF /* TitanMethod.swift */,
+				2604C600202C1769009CDBAF /* TitanHeader.swift */,
+				2604C601202C1769009CDBAF /* TitanLogs.swift */,
+				2604C602202C1769009CDBAF /* README.md */,
+				2604C603202C1769009CDBAF /* TitanCore.swift */,
+				2604C604202C1769009CDBAF /* TitanError.swift */,
+				2604C605202C1769009CDBAF /* TitanRequest.swift */,
+			);
+			path = TitanCore;
+			sourceTree = "<group>";
+		};
+		2604C606202C1769009CDBAF /* Titan404 */ = {
+			isa = PBXGroup;
+			children = (
+				2604C607202C1769009CDBAF /* Titan404.swift */,
+				2604C608202C1769009CDBAF /* README.md */,
+			);
+			path = Titan404;
+			sourceTree = "<group>";
+		};
+		2604C609202C1769009CDBAF /* Titan */ = {
+			isa = PBXGroup;
+			children = (
+				2604C60A202C1769009CDBAF /* Titan.swift */,
+			);
+			path = Titan;
+			sourceTree = "<group>";
+		};
 		266686841E95C24200777D94 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +374,7 @@
 		266686851E95C24200777D94 /* SKServer */ = {
 			isa = PBXGroup;
 			children = (
-				266686C91E95C26400777D94 /* Titan */,
+				2604C5E8202C1769009CDBAF /* Titan */,
 				266686861E95C24200777D94 /* Conformers */,
 				266686891E95C24200777D94 /* Middleware */,
 				2666868E1E95C24200777D94 /* Model */,
@@ -231,39 +418,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		266686C91E95C26400777D94 /* Titan */ = {
-			isa = PBXGroup;
-			children = (
-				266686CB1E95C26400777D94 /* Router */,
-				266686D31E95C26400777D94 /* TitanCore.swift */,
-				266686D41E95C26400777D94 /* TitanCORS.swift */,
-				266686D51E95C26400777D94 /* TitanErrorHandling.swift */,
-				266686D61E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift */,
-				266686D71E95C26400777D94 /* TitanJSONRequestBody.swift */,
-				266686D81E95C26400777D94 /* TitanQueryString.swift */,
-			);
-			path = Titan;
-			sourceTree = "<group>";
-		};
-		266686CB1E95C26400777D94 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				266686CC1E95C26400777D94 /* InitializerOverloads.swift */,
-				266686CD1E95C26400777D94 /* PathParameterSupport.swift */,
-				266686CE1E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift */,
-				266686CF1E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift */,
-				266686D01E95C26400777D94 /* TitanParameterizedRoutes.generated.swift */,
-				266686D11E95C26400777D94 /* TitanRoutingExtension.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		2684F1731E95AA6900536DCC = {
 			isa = PBXGroup;
 			children = (
 				2684F17F1E95AA6900536DCC /* SKServer */,
 				2684F17E1E95AA6900536DCC /* Products */,
 				26D1C4E31EE4718600C95954 /* Frameworks */,
+				0D24C9D46EACDD1F3E72BC95 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -307,6 +468,9 @@
 				26D1C4E41EE4718700C95954 /* SKCore.framework */,
 				26D1C4E51EE4718700C95954 /* SKWebAPI.framework */,
 				26D1C4E61EE4718700C95954 /* Swifter.framework */,
+				8EC85050CB50C828BF86A90B /* Pods_SKServer_iOS.framework */,
+				76B4194C5786114360904DC0 /* Pods_SKServer_macOS.framework */,
+				A107E3414578AC3052D639BB /* Pods_SKServer_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -342,11 +506,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2684F1851E95AA6900536DCC /* Build configuration list for PBXNativeTarget "SKServer macOS" */;
 			buildPhases = (
+				8D12004738CFFC935A90143D /* [CP] Check Pods Manifest.lock */,
 				2684F1781E95AA6900536DCC /* Sources */,
 				2684F1791E95AA6900536DCC /* Frameworks */,
 				2684F17A1E95AA6900536DCC /* Headers */,
 				2684F17B1E95AA6900536DCC /* Resources */,
 				2668B5181EEB40E00082DE33 /* SwiftLint */,
+				F001F818C1C6709C81B3D9E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,11 +527,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2684F1E11E95ABD400536DCC /* Build configuration list for PBXNativeTarget "SKServer iOS" */;
 			buildPhases = (
+				C140496C0EDBF8D9F25CF73A /* [CP] Check Pods Manifest.lock */,
 				2684F1C31E95ABD400536DCC /* Sources */,
 				2684F1DE1E95ABD400536DCC /* Frameworks */,
 				2684F1DF1E95ABD400536DCC /* Headers */,
 				2684F1E01E95ABD400536DCC /* Resources */,
 				2668B5191EEB40EA0082DE33 /* SwiftLint */,
+				5A4BF0B20D67098D8CF88DBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,11 +548,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2684F2051E95ABD600536DCC /* Build configuration list for PBXNativeTarget "SKServer tvOS" */;
 			buildPhases = (
+				C31E872DF70B8F28906AFFD2 /* [CP] Check Pods Manifest.lock */,
 				2684F1E71E95ABD600536DCC /* Sources */,
 				2684F2021E95ABD600536DCC /* Frameworks */,
 				2684F2031E95ABD600536DCC /* Headers */,
 				2684F2041E95ABD600536DCC /* Resources */,
 				2668B51A1EEB40F30082DE33 /* SwiftLint */,
+				D5F94B770AD46A2C4C7ECFF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,7 +571,7 @@
 		2684F1741E95AA6900536DCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Peter Zignego";
 				TargetAttributes = {
 					2684F17C1E95AA6900536DCC = {
@@ -440,6 +610,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2604C64D202C1769009CDBAF /* README.md in Resources */,
+				2604C63E202C1769009CDBAF /* README.md in Resources */,
+				2604C611202C1769009CDBAF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +620,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2604C64E202C1769009CDBAF /* README.md in Resources */,
+				2604C63F202C1769009CDBAF /* README.md in Resources */,
+				2604C612202C1769009CDBAF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +630,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2604C64F202C1769009CDBAF /* README.md in Resources */,
+				2604C640202C1769009CDBAF /* README.md in Resources */,
+				2604C613202C1769009CDBAF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +681,105 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		5A4BF0B20D67098D8CF88DBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKServer iOS/Pods-SKServer iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D12004738CFFC935A90143D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKServer macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C140496C0EDBF8D9F25CF73A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKServer iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C31E872DF70B8F28906AFFD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKServer tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F94B770AD46A2C4C7ECFF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKServer tvOS/Pods-SKServer tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F001F818C1C6709C81B3D9E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKServer macOS/Pods-SKServer macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -509,33 +787,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266686F11E95C26400777D94 /* TitanCore.swift in Sources */,
+				2604C644202C1769009CDBAF /* TitanError.swift in Sources */,
+				2604C61A202C1769009CDBAF /* TitanParameterizedRoutes.swift in Sources */,
+				2604C632202C1769009CDBAF /* TitanResponse.swift in Sources */,
+				2604C60B202C1769009CDBAF /* PathParameterSupport.swift in Sources */,
+				2604C63B202C1769009CDBAF /* TitanLogs.swift in Sources */,
 				2666869F1E95C24200777D94 /* MessageActionMiddleware.swift in Sources */,
+				2604C629202C1769009CDBAF /* TitanErrorHandling.swift in Sources */,
+				2604C617202C1769009CDBAF /* TitanRoutesByMethod.swift in Sources */,
+				2604C647202C1769009CDBAF /* TitanRequest.swift in Sources */,
 				266686B71E95C24200777D94 /* OAuthResponse.swift in Sources */,
-				266686F71E95C26400777D94 /* TitanErrorHandling.swift in Sources */,
 				266686B41E95C24200777D94 /* MessageActionRoute.swift in Sources */,
-				266686DF1E95C26400777D94 /* PathParameterSupport.swift in Sources */,
+				2604C62C202C1769009CDBAF /* TitanHealthz.swift in Sources */,
 				266686A81E95C24200777D94 /* ResponseMiddleware.swift in Sources */,
-				266686FD1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */,
 				266686BD1E95C24200777D94 /* SKResponse.swift in Sources */,
-				266687001E95C26400777D94 /* TitanQueryString.swift in Sources */,
-				266686DC1E95C26400777D94 /* InitializerOverloads.swift in Sources */,
+				2604C61D202C1769009CDBAF /* TitanJSONRequestBody.swift in Sources */,
+				2604C60E202C1769009CDBAF /* TitanRoutingExtension.swift in Sources */,
 				266686AE1E95C24200777D94 /* IncomingWebhook.swift in Sources */,
-				266686EB1E95C26400777D94 /* TitanRoutingExtension.swift in Sources */,
 				266686AB1E95C24200777D94 /* AuthorizeResponse.swift in Sources */,
-				266686E51E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift in Sources */,
-				266686E81E95C26400777D94 /* TitanParameterizedRoutes.generated.swift in Sources */,
-				266686E21E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift in Sources */,
 				266686A51E95C24200777D94 /* RedirectMiddleware.swift in Sources */,
+				2604C623202C1769009CDBAF /* TitanQueryString.swift in Sources */,
+				2604C62F202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift in Sources */,
+				2604C641202C1769009CDBAF /* TitanCore.swift in Sources */,
 				2666869C1E95C24200777D94 /* SwifterServer.swift in Sources */,
-				266686FA1E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift in Sources */,
-				266686F41E95C26400777D94 /* TitanCORS.swift in Sources */,
 				266686C61E95C24200777D94 /* SlackKitResponder.swift in Sources */,
 				266686BA1E95C24200777D94 /* RequestRoute.swift in Sources */,
+				2604C626202C1769009CDBAF /* TitanCORS.swift in Sources */,
+				2604C650202C1769009CDBAF /* Titan.swift in Sources */,
+				2604C64A202C1769009CDBAF /* Titan404.swift in Sources */,
 				266686C31E95C24200777D94 /* SKServer.swift in Sources */,
+				2604C614202C1769009CDBAF /* InitializerOverloads.swift in Sources */,
 				266686B11E95C24200777D94 /* MessageActionRequest.swift in Sources */,
+				2604C638202C1769009CDBAF /* TitanHeader.swift in Sources */,
 				266686A21E95C24200777D94 /* OAuthMiddleware.swift in Sources */,
 				266686C01E95C24200777D94 /* WebhookRequest.swift in Sources */,
+				2604C635202C1769009CDBAF /* TitanMethod.swift in Sources */,
+				2604C620202C1769009CDBAF /* TitanJSONResponseBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,33 +830,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266686F21E95C26400777D94 /* TitanCore.swift in Sources */,
+				2604C645202C1769009CDBAF /* TitanError.swift in Sources */,
+				2604C61B202C1769009CDBAF /* TitanParameterizedRoutes.swift in Sources */,
+				2604C633202C1769009CDBAF /* TitanResponse.swift in Sources */,
+				2604C60C202C1769009CDBAF /* PathParameterSupport.swift in Sources */,
+				2604C63C202C1769009CDBAF /* TitanLogs.swift in Sources */,
 				266686A01E95C24200777D94 /* MessageActionMiddleware.swift in Sources */,
+				2604C62A202C1769009CDBAF /* TitanErrorHandling.swift in Sources */,
+				2604C618202C1769009CDBAF /* TitanRoutesByMethod.swift in Sources */,
+				2604C648202C1769009CDBAF /* TitanRequest.swift in Sources */,
 				266686B81E95C24200777D94 /* OAuthResponse.swift in Sources */,
-				266686F81E95C26400777D94 /* TitanErrorHandling.swift in Sources */,
 				266686B51E95C24200777D94 /* MessageActionRoute.swift in Sources */,
-				266686E01E95C26400777D94 /* PathParameterSupport.swift in Sources */,
+				2604C62D202C1769009CDBAF /* TitanHealthz.swift in Sources */,
 				266686A91E95C24200777D94 /* ResponseMiddleware.swift in Sources */,
-				266686FE1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */,
 				266686BE1E95C24200777D94 /* SKResponse.swift in Sources */,
-				266687011E95C26400777D94 /* TitanQueryString.swift in Sources */,
-				266686DD1E95C26400777D94 /* InitializerOverloads.swift in Sources */,
+				2604C61E202C1769009CDBAF /* TitanJSONRequestBody.swift in Sources */,
+				2604C60F202C1769009CDBAF /* TitanRoutingExtension.swift in Sources */,
 				266686AF1E95C24200777D94 /* IncomingWebhook.swift in Sources */,
-				266686EC1E95C26400777D94 /* TitanRoutingExtension.swift in Sources */,
 				266686AC1E95C24200777D94 /* AuthorizeResponse.swift in Sources */,
-				266686E61E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift in Sources */,
-				266686E91E95C26400777D94 /* TitanParameterizedRoutes.generated.swift in Sources */,
-				266686E31E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift in Sources */,
 				266686A61E95C24200777D94 /* RedirectMiddleware.swift in Sources */,
+				2604C624202C1769009CDBAF /* TitanQueryString.swift in Sources */,
+				2604C630202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift in Sources */,
+				2604C642202C1769009CDBAF /* TitanCore.swift in Sources */,
 				2666869D1E95C24200777D94 /* SwifterServer.swift in Sources */,
-				266686FB1E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift in Sources */,
-				266686F51E95C26400777D94 /* TitanCORS.swift in Sources */,
 				266686C71E95C24200777D94 /* SlackKitResponder.swift in Sources */,
 				266686BB1E95C24200777D94 /* RequestRoute.swift in Sources */,
+				2604C627202C1769009CDBAF /* TitanCORS.swift in Sources */,
+				2604C651202C1769009CDBAF /* Titan.swift in Sources */,
+				2604C64B202C1769009CDBAF /* Titan404.swift in Sources */,
 				266686C41E95C24200777D94 /* SKServer.swift in Sources */,
+				2604C615202C1769009CDBAF /* InitializerOverloads.swift in Sources */,
 				266686B21E95C24200777D94 /* MessageActionRequest.swift in Sources */,
+				2604C639202C1769009CDBAF /* TitanHeader.swift in Sources */,
 				266686A31E95C24200777D94 /* OAuthMiddleware.swift in Sources */,
 				266686C11E95C24200777D94 /* WebhookRequest.swift in Sources */,
+				2604C636202C1769009CDBAF /* TitanMethod.swift in Sources */,
+				2604C621202C1769009CDBAF /* TitanJSONResponseBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,33 +873,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266686F31E95C26400777D94 /* TitanCore.swift in Sources */,
+				2604C646202C1769009CDBAF /* TitanError.swift in Sources */,
+				2604C61C202C1769009CDBAF /* TitanParameterizedRoutes.swift in Sources */,
+				2604C634202C1769009CDBAF /* TitanResponse.swift in Sources */,
+				2604C60D202C1769009CDBAF /* PathParameterSupport.swift in Sources */,
+				2604C63D202C1769009CDBAF /* TitanLogs.swift in Sources */,
 				266686A11E95C24200777D94 /* MessageActionMiddleware.swift in Sources */,
+				2604C62B202C1769009CDBAF /* TitanErrorHandling.swift in Sources */,
+				2604C619202C1769009CDBAF /* TitanRoutesByMethod.swift in Sources */,
+				2604C649202C1769009CDBAF /* TitanRequest.swift in Sources */,
 				266686B91E95C24200777D94 /* OAuthResponse.swift in Sources */,
-				266686F91E95C26400777D94 /* TitanErrorHandling.swift in Sources */,
 				266686B61E95C24200777D94 /* MessageActionRoute.swift in Sources */,
-				266686E11E95C26400777D94 /* PathParameterSupport.swift in Sources */,
+				2604C62E202C1769009CDBAF /* TitanHealthz.swift in Sources */,
 				266686AA1E95C24200777D94 /* ResponseMiddleware.swift in Sources */,
-				266686FF1E95C26400777D94 /* TitanJSONRequestBody.swift in Sources */,
 				266686BF1E95C24200777D94 /* SKResponse.swift in Sources */,
-				266687021E95C26400777D94 /* TitanQueryString.swift in Sources */,
-				266686DE1E95C26400777D94 /* InitializerOverloads.swift in Sources */,
+				2604C61F202C1769009CDBAF /* TitanJSONRequestBody.swift in Sources */,
+				2604C610202C1769009CDBAF /* TitanRoutingExtension.swift in Sources */,
 				266686B01E95C24200777D94 /* IncomingWebhook.swift in Sources */,
-				266686ED1E95C26400777D94 /* TitanRoutingExtension.swift in Sources */,
 				266686AD1E95C24200777D94 /* AuthorizeResponse.swift in Sources */,
-				266686E71E95C26400777D94 /* TitanInstanceRoutesByMethod.generated.swift in Sources */,
-				266686EA1E95C26400777D94 /* TitanParameterizedRoutes.generated.swift in Sources */,
-				266686E41E95C26400777D94 /* TitanInstanceMethodsNoLabels.generated.swift in Sources */,
 				266686A71E95C24200777D94 /* RedirectMiddleware.swift in Sources */,
+				2604C625202C1769009CDBAF /* TitanQueryString.swift in Sources */,
+				2604C631202C1769009CDBAF /* TitanFormURLEncodedBodyParser.swift in Sources */,
+				2604C643202C1769009CDBAF /* TitanCore.swift in Sources */,
 				2666869E1E95C24200777D94 /* SwifterServer.swift in Sources */,
-				266686FC1E95C26400777D94 /* TitanFormURLEncodedBodyParser.swift in Sources */,
-				266686F61E95C26400777D94 /* TitanCORS.swift in Sources */,
 				266686C81E95C24200777D94 /* SlackKitResponder.swift in Sources */,
 				266686BC1E95C24200777D94 /* RequestRoute.swift in Sources */,
+				2604C628202C1769009CDBAF /* TitanCORS.swift in Sources */,
+				2604C652202C1769009CDBAF /* Titan.swift in Sources */,
+				2604C64C202C1769009CDBAF /* Titan404.swift in Sources */,
 				266686C51E95C24200777D94 /* SKServer.swift in Sources */,
+				2604C616202C1769009CDBAF /* InitializerOverloads.swift in Sources */,
 				266686B31E95C24200777D94 /* MessageActionRequest.swift in Sources */,
+				2604C63A202C1769009CDBAF /* TitanHeader.swift in Sources */,
 				266686A41E95C24200777D94 /* OAuthMiddleware.swift in Sources */,
 				266686C21E95C24200777D94 /* WebhookRequest.swift in Sources */,
+				2604C637202C1769009CDBAF /* TitanMethod.swift in Sources */,
+				2604C622202C1769009CDBAF /* TitanJSONResponseBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +925,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -628,7 +935,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -673,7 +984,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -681,7 +994,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -710,6 +1027,7 @@
 		};
 		2684F1861E95AA6900536DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB11F27AF1E4E8D558C8E09B /* Pods-SKServer macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -731,12 +1049,13 @@
 				PRODUCT_NAME = SKServer;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		2684F1871E95AA6900536DCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8670F387DB57B25697727CC9 /* Pods-SKServer macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -758,12 +1077,13 @@
 				PRODUCT_NAME = SKServer;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		2684F1E21E95ABD400536DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6927E44E012557934ECFCF /* Pods-SKServer iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -785,12 +1105,13 @@
 				PRODUCT_NAME = SKServer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		2684F1E31E95ABD400536DCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C671F48048AFFAF692111DDB /* Pods-SKServer iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -812,12 +1133,13 @@
 				PRODUCT_NAME = SKServer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		2684F2061E95ABD600536DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C8ABC8D9CB65DAC5735EBF /* Pods-SKServer tvOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -838,13 +1160,14 @@
 				PRODUCT_NAME = SKServer;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		2684F2071E95ABD600536DCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B133A36C10F546CAC075AC /* Pods-SKServer tvOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -865,7 +1188,7 @@
 				PRODUCT_NAME = SKServer;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;

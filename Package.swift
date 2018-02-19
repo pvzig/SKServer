@@ -9,7 +9,7 @@ let package = Package(
     dependencies: [
     	.package(url: "https://github.com/SlackKit/SKCore", .upToNextMinor(from: "4.1.0")),
     	.package(url: "https://github.com/SlackKit/SKWebAPI", .upToNextMinor(from: "4.1.0")),
-    	.package(url: "https://github.com/httpswift/swifter.git", .branch("stable"))
+        .package(url: "https://github.com/httpswift/swifter.git", from: "1.0.0")
     ],
     targets: [
     	.target(name: "SKServer",

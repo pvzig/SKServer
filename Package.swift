@@ -7,8 +7,8 @@ let package = Package(
         .library(name: "SKServer", targets: ["SKServer"])
     ],
     dependencies: [
-    	.package(url: "https://github.com/SlackKit/SKCore", .upToNextMinor(from: "4.1.0")),
-    	.package(url: "https://github.com/SlackKit/SKWebAPI", .upToNextMinor(from: "4.1.0")),
+    	.package(url: "https://github.com/pvzig/SKCore", .upToNextMinor(from: "4.1.0")),
+    	.package(url: "https://github.com/pvzig/SKWebAPI", .upToNextMinor(from: "4.1.0")),
         .package(url: "https://github.com/httpswift/swifter.git", .upToNextMinor(from: "1.4.1"))
     ],
     targets: [
